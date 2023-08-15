@@ -5,6 +5,7 @@ import Myskills from "./components/Myskills.jsx";
 import Projects from "./components/Projects";
 import Blogheader from "./components/Blogheader";
 import BlogContents from "./components/BlogContents";
+import Footer from "./components/Footer";
 
 export default function App() {
   const photoData = [
@@ -83,7 +84,10 @@ export default function App() {
       <Myskills />
       {PhotoComponents}
       <Blogheader />
-      {BlogImgComponents}
+      <div className="flex flex-row gap-10 justify-center items-center">
+        {BlogImgComponents}
+      </div>
+      <Footer/>
     </>
   );
 }
