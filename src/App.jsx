@@ -1,4 +1,5 @@
 import "./index.css";
+import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Aboutphoto from "./components/Aboutphoto";
 import Myskills from "./components/Myskills.jsx";
@@ -79,6 +80,7 @@ export default function App() {
 
   return (
     <>
+      <Navbar/>
       <Header />
       <Aboutphoto />
       <Myskills />
@@ -91,3 +93,5 @@ export default function App() {
     </>
   );
 }
+
+
