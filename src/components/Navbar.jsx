@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <div>
@@ -5,13 +7,15 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <h1 className="text-2xl font-bold">Denis Mwangi</h1>
           <ul className="flex space-x-6 text-2xl font-medium">
-            <li><a href="/">Work</a></li>
+            <li><Link to="/WorkPage">Work</Link></li>
             <li><a href="/">About</a></li>
             <li><a href="/">Blog</a></li>
-            <li><a href="/">Contact</a></li>
+            <li><Link to="/ContactPage">Contact</Link></li>
           </ul>
         </div>
       </nav>
     </div>
   );
 }
+
+
