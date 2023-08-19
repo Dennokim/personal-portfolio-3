@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import ContactPage from './pages/ContactPage.jsx';
 import WorkPage from './pages/WorkPage.jsx';
+import BlogPage from './pages/BlogPage.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "WorkPage",
     element: <WorkPage/>,
+  },
+  {
+    path: "BlogPage",
+    element: <BlogPage/>,
   },
 ]);
 

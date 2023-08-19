@@ -1,5 +1,6 @@
 // WorkPage.jsx
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 import { renderProjects } from "../ProjectRenderer"; // Adjust the import path
 import projectData from "../projectData"; // Import projectData
 
@@ -15,6 +16,7 @@ export default function WorkPage() {
         </div>
       </div>
       <div>{WorkPagePhotoComponents}</div>
+      <Footer/>
     </>
   );
 }
