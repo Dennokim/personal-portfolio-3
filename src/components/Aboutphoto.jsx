@@ -1,6 +1,30 @@
-export default function Aboutphoto() {
-    return (
-      <div className="flex">
+import { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+
+export default function AboutPhoto() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const zoomStyles = {
+    transform: isHovered ? "scale(0.95)" : "scale(1)", // Scale down on hover
+    transition: "transform 0.3s ease-in-out", // Add a smooth transition
+  };
+
+  return (
+    <Link to="/AboutPage">
+      <div
+        className="flex"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        style={zoomStyles}
+      >
         <div className="container h-screen bg-gray-100 mr-24 ml-24 flex justify-between items-center">
           <div className="w-1/2">
             <h1 className="text-7xl font-medium pl-28">
@@ -17,5 +41,6 @@ export default function Aboutphoto() {
           </div>
         </div>
       </div>
-    );
-  }
+    </Link>
+  );
+}

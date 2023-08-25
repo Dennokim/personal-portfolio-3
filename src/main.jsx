@@ -9,6 +9,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
+import AboutPage from './pages/AboutPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "BlogPage",
     element: <BlogPage/>,
+  },
+  {
+    path: "AboutPage",
+    element: <AboutPage/>,
   },
 ]);
 

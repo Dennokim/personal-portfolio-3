@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div className="flex">
-      <div className="container h-screen bg-white mr-24 ml-24 flex justify-between items-center">
+      <div className="container h-screen mr-24 ml-24 flex justify-between items-center">
         <div className="w-1/2 pt-10">
           <h1 className="text-8xl font-medium pl-20">
             Let&#39;s connect <br /> digitally
